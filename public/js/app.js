@@ -5,7 +5,7 @@ $(document).ready(function () {
             type: 'POST',
             url: $("#login_form").prop('action'),
             data: $("#login_form").serialize(),
-            success: data => { console.log(data); },
+            success: data => { alert(data); },
             error: err => console.log(err)
         });
     });
